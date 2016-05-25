@@ -68,6 +68,7 @@ $(function() {
   $("#search-page").on("click", ".result", function(event){
     //debugger
     event.preventDefault();
+    $('#more-button').hide();
     var imdbID = $(this).data("data-imdbID");
     $.ajax({
       method: "GET",
